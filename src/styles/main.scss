@@ -1,0 +1,39 @@
+@use 'texto';
+@use 'info';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    list-style: none;
+    font-family: 'Pacifico', cursive;
+}
+
+.container {
+    max-width: 1060px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+
+    @media (max-width: 640px) {
+        max-width: 80%;
+
+        .info {
+            ul {
+                display: block;
+            }
+        }
+
+    }
+}
+
+body {
+    background-image: url(../imgs/Aniv.jpg);
+    background-size: cover;
+}
+
+section {
+    margin-top: 150px;
+}
